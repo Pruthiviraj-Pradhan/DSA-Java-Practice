@@ -17,6 +17,7 @@ public class RemoveCharFromString {
   System.out.println("Enter any string:"); 
   String s = obj.nextLine(); 
   System.out.println(RemoveCharFromString.nox(s,s.length()-1));  //axbx,4-1=3 
+  obj.close();
  } 
 }
 

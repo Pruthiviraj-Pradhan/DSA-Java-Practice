@@ -24,5 +24,6 @@ public class WaveForm {
     if(n%2==0){
         System.out.print(a[i]);
     }
+    sc.close();
   }
 }

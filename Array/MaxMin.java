@@ -31,6 +31,7 @@ public class MaxMin {
             }
         }
         System.out.println("min=" +min);
+        sc.close();
     }
 }
 

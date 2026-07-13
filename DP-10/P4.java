@@ -18,6 +18,7 @@ public class P4 {
 
             P4 obj = new P4();
             obj.pattern4(n);
+            sc.close();
     }
 }
 

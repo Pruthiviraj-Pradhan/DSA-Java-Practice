@@ -20,5 +20,6 @@ public class StringCount {
   System.out.println("Enter any string:"); 
   String s = obj.nextLine();//very,3 
   System.out.println(StringCount.count(s,s.length()-1)); 
+  obj.close();
  }
 }

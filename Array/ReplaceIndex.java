@@ -34,5 +34,6 @@ public class ReplaceIndex {
         for(i = 0; i<a.length; i++){
             System.out.print(a[i]+" ");
         }
+        sc.close();
     }
 }

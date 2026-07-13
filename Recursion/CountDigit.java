@@ -19,6 +19,6 @@ public class CountDigit {
      Scanner sc = new Scanner(System.in);
      int n = sc.nextInt();
      System.out.print(CountDigit.count(n));
-    
+    sc.close();
    }
 }

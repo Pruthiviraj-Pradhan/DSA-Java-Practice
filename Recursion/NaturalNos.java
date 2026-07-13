@@ -12,5 +12,6 @@ public class NaturalNos {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         NaturalNos.print(n);
+        sc.close();
     }
 }

@@ -22,5 +22,6 @@ public class OldChToNewCh {
   System.out.println("Enter any string:"); 
   String s = obj.nextLine(); 
   System.out.println(OldChToNewCh.replace(s,s.length()-1)); 
+  obj.close();
  }
 }

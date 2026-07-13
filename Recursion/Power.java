@@ -17,7 +17,7 @@ public class Power {
         System.out.print("Enter b value: ");
         int b = sc.nextInt();
         System.out.print(Power.power(a,b));
-       
+       sc.close();
     }
     
 }

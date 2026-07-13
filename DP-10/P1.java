@@ -16,6 +16,7 @@ public class P1 {
         int n = sc.nextInt();    
         P1 obj = new P1();
         obj.pattern1(n);
+        sc.close();
 }
 }
 /*

@@ -20,6 +20,7 @@ public class SumOfEven {
                 }
         }
         System.out.println("Sum of even numbers: " + sum);
+        sc.close();
     }
 }
 

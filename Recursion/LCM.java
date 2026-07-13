@@ -20,6 +20,7 @@ public class LCM {
   System.out.println("Enter n2 value:"); 
   int n2=obj.nextInt(); 
   System.out.print(LCM.lcm(n1,n2));
+  obj.close();
  }
     
 }

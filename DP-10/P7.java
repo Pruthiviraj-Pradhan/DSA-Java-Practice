@@ -22,6 +22,7 @@ public class P7 {
 
         P7 obj = new P7();
         obj.pattern7(n);
+        sc.close();
     }
 }
 /*

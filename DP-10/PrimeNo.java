@@ -34,6 +34,7 @@ public class PrimeNo {
         PrimeNo obj = new PrimeNo();
         boolean result = obj.isPrime(n);
         System.out.print("Output : " + result);
+        sc.close();
     }
 }
 

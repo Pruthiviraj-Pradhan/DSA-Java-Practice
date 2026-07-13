@@ -49,7 +49,7 @@ public class ReplaceOld {
         } */
 
         //Version 4
-           int c=0;
+        int c = 0;
            for(i=a.length-1;i>=0;i--){
             if(olde==a[i]){
                 a[i]=newe;
@@ -60,6 +60,7 @@ public class ReplaceOld {
         for(i = 0; i<a.length; i++){
             System.out.print(a[i]+" ");
        }
+       sc.close();
    }
 
 }

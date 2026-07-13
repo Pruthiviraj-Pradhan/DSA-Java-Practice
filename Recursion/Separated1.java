@@ -18,5 +18,6 @@ public static void main(String[] args)
   System.out.println("Enter any string:"); 
   String s = obj.nextLine(); 
   System.out.println(Separated1.newS(s,s.length()-1));
+  obj.close();
 }
 }

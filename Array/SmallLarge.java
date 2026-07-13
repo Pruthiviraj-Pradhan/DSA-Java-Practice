@@ -21,5 +21,6 @@ public class SmallLarge {
             low++;
             high--;
         }
+        sc.close();
     }
 }

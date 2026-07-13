@@ -37,6 +37,7 @@ public class P9 {
 
         P9 obj = new P9();
         obj.pattern9(n);
+        sc.close();
     }
 }
 

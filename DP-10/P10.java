@@ -26,6 +26,7 @@ public class P10 {
 
             P10 obj = new P10();
             obj.pattern10(n);
+            sc.close();
     }
 }
 

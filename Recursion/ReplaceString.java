@@ -23,5 +23,6 @@ public class ReplaceString {
   System.out.println("Enter any string:"); 
   String s = obj.nextLine();//very,3 
   System.out.println(ReplaceString.replacestr(s,s.length()-1)); 
+  obj.close();
  }
 }

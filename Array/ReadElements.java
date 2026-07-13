@@ -32,5 +32,6 @@ public class ReadElements {
             {
                 System.out.println("item="+item);
             } 
+            sc.close();
     }
 }

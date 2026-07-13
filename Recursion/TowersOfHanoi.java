@@ -28,6 +28,7 @@ public static void main(String[] args)
   int n=sc.nextInt(); 
    
   TowersOfHanoi.towersOfHanoi(n,"S","H","D"); 
+  sc.close();
   }
 }
 

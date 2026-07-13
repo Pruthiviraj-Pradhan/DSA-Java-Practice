@@ -30,5 +30,6 @@ public class Armstrong {
         Armstrong obj = new Armstrong();
         boolean result = obj.isArmstrong(n);
         System.out.print("Output : "+result);
+        sc.close();
     }
 }

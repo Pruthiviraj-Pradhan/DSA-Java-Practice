@@ -13,6 +13,7 @@ public class RevString {
   System.out.println("Enter any String:"); 
   String s = obj.nextLine(); 
   System.out.println(RevString.revstring(s)); 
+  obj.close();
  } 
 }
 

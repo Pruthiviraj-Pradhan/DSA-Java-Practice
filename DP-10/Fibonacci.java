@@ -55,5 +55,6 @@ public class Fibonacci {
         int n = sc.nextInt();
 
         sequence(n);
+        sc.close();
     }
 }

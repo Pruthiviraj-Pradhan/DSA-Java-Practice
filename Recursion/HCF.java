@@ -21,6 +21,7 @@ public class HCF {
   System.out.println("Enter b value:"); 
   int b=obj.nextInt(); 
   System.out.print(HCF.hcf(a,b));
+  obj.close();
  }
     
 }

@@ -17,6 +17,7 @@ public class P3 {
 
             P3 obj = new P3();
             obj.pattern3(n);
+            sc.close();
     }
 }
 

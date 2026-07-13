@@ -37,6 +37,7 @@ import java.util.Scanner;
         CountDigit obj = new CountDigit();
         int result = obj.countDigit(n);
         System.out.println("Output: " + result);
+        sc.close();
     }
 }
 

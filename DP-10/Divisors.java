@@ -38,6 +38,7 @@ public class Divisors {
         Divisors obj = new Divisors();
         int[] result = obj.divisors(n);
         System.out.print("Output : "+Arrays.toString(result));
+        sc.close();
     }
     
 }

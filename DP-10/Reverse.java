@@ -29,6 +29,7 @@ public class Reverse {
         Reverse obj = new Reverse();
         int result = obj.reverseNumber(n);
         System.out.print("Output : "+result);
+        sc.close();
     }
     
 }

@@ -17,5 +17,6 @@ public class CountNoOfTimes {
   System.out.println("Enter any string:"); 
   String s = obj.nextLine(); 
   System.out.println(CountNoOfTimes.count(s,'a',s.length()-1)); 
+  obj.close();
  }
 }

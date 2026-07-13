@@ -17,6 +17,7 @@ public class P2 {
 
             P2 obj = new P2();
             obj.pattern2(n);
+            sc.close();
     }
 }
 /*

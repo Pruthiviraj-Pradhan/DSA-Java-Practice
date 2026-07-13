@@ -13,6 +13,7 @@ public class SumOfNaturalNos {
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt();
             System.out.print(SumOfNaturalNos.sum(n));
+            sc.close();
     }
 }
     

@@ -21,5 +21,6 @@ public class SortUsingString {
             }
         }
         System.out.println(new String(a));
+        sc.close();
     }
 }

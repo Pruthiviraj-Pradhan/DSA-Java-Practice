@@ -20,5 +20,6 @@ class ForLoop {
         ForLoop obj = new ForLoop();
        int result = obj.forLoop(low, high);
        System.out.println("Sum="+result);
+       sc.close();
     }
 }

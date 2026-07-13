@@ -45,5 +45,6 @@ class Switch {
         int n = sc.nextInt();
         Switch obj = new Switch();
         obj.whichWeekDay(n);
+        sc.close();
     }
 }

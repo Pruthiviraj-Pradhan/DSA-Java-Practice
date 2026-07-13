@@ -29,6 +29,7 @@ public static void main(String s[])
         Palindrome obj = new Palindrome();
         boolean result = obj.isPalindrome(n);
         System.out.print("Output : "+result);
+        sc.close();
     }
     
 }

@@ -18,6 +18,7 @@ public class P5 {
 
             P5 obj = new P5();
             obj.pattern5(n);
+            sc.close();
     }
 
     }

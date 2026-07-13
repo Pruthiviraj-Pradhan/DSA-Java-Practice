@@ -17,6 +17,7 @@ public class PrimeNo {
         System.out.print("Enter n :");
         int n = sc.nextInt();
         System.out.print(PrimeNo.prime(n,n/2));
+        sc.close();
     }
     
 }

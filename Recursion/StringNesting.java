@@ -19,6 +19,7 @@ public class StringNesting {
   Scanner obj = new Scanner(System.in); 
   System.out.println("Enter any string:"); 
   String s = obj.nextLine(); 
-  System.out.println(StringNesting.newS(s,0,s.length()-1)); 
+  System.out.println(StringNesting.newS(s,0,s.length()-1));
+  obj.close(); 
  }
 }

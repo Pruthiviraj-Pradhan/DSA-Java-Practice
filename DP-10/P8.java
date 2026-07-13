@@ -24,6 +24,7 @@ public class P8 {
 
         P8 obj = new P8();
         obj.pattern8(n);
+        sc.close();
     }
 }
 /*

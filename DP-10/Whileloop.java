@@ -25,5 +25,6 @@ public class Whileloop {
         Whileloop obj = new Whileloop();
         int result = obj.whileLoop(n);
         System.out.print("Result: " + result);
+        sc.close();
         }
 }

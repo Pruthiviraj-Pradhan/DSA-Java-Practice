@@ -19,5 +19,6 @@ public class SumOfElements {
             sum = sum+a[i];
         }
         System.out.println(sum);
+        sc.close();
    }
 }

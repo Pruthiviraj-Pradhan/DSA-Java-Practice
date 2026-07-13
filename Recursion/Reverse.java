@@ -13,7 +13,7 @@ public class Reverse {
         Scanner sc = new Scanner(System.in);
         String n = sc.nextLine();
         System.out.print(Reverse.reverse(Integer.parseInt(n), n.length()));
-
+        sc.close();
     }
     
 }

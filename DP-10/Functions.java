@@ -25,6 +25,6 @@ public class Functions {
         Functions obj = new Functions();
         obj.reverse(arr);
         System.out.print("Output: "+Arrays.toString(arr));
-
+        sc.close();
     }
 }

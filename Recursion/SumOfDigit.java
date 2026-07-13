@@ -14,6 +14,7 @@ public static void main(String s[]){
         System.out.print("Enter n :");
         int n = sc.nextInt();
         System.out.print(SumOfDigit.sum(n));
+        sc.close();
     }
     
 }

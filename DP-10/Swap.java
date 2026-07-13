@@ -64,6 +64,7 @@ public class Swap {
         System.out.println("Enter n2: ");
         int n2 = sc.nextInt();
         Swap.swaping(n1,n2);
+        sc.close();
     
     }
     

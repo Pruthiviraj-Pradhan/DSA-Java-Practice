@@ -19,6 +19,7 @@ public class P11 {
 
         P11 o = new P11();
         o.pattern11(n);
+        sc.close();
     }
 }
 

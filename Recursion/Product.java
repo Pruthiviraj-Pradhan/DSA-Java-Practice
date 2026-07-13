@@ -25,6 +25,7 @@ public static void main(String s[]){
         System.out.print("Enter b value: ");
         int b = sc.nextInt();
         System.out.print(Product.product(a,b));
+        sc.close();
        
     }
     

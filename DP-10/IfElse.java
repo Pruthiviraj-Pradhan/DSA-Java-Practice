@@ -29,5 +29,6 @@ class IfElse {
             
             IfElse obj = new IfElse();
             obj.studentGrade(n);
+            sc.close();
         }
     }
