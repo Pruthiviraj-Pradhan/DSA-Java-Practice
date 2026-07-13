@@ -1,0 +1,24 @@
+/*
+"python is very very easy programming" ----> 2 
+"java is very easy" -----------------------> 1 
+"c programming is easy" -------------------> 0
+*/
+package Recursion;
+import java.util.*;
+public class StringCount {
+    static int count(String s, int index){
+        if(index<3)
+            return 0;
+        if(s.substring(index-3,index+1).equals("very")) //RC1==> if 'very' word is existed 
+            return 1+count(s,index-3);
+        else                                                     //RC2==>if 'very' not existed
+            return count(s, index-1);
+    }
+    public static void main(String[] args)  
+ { 
+  Scanner obj = new Scanner(System.in); 
+  System.out.println("Enter any string:"); 
+  String s = obj.nextLine();//very,3 
+  System.out.println(StringCount.count(s,s.length()-1)); 
+ }
+}
