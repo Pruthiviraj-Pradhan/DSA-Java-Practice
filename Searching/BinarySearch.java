@@ -1,4 +1,5 @@
 package Searching;
+//Normal Implementation
 import java.util.*;
 public class BinarySearch {
     static int binarySearch(int a[], int key){
@@ -38,7 +39,7 @@ public class BinarySearch {
 
 
 
-/* Recursion
+/* Recursive
 
 import java.util.*;
 public class BinarySearch {
