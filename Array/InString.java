@@ -1,4 +1,4 @@
-package Searching;
+package Array;
 /*
 Arrays.toString(array)
 "["+e1+", "+e2+", "+e3+", "+...+"+en"]" ---> toString() 

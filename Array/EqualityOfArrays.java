@@ -1,4 +1,4 @@
-package Searching;
+package Array;
 import java.util.Arrays;
 /*Normal comparison
 public class EqualityOfArrays {
