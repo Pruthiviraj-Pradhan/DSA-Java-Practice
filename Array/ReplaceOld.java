@@ -49,7 +49,6 @@ public class ReplaceOld {
         } */
 
         //Version 4
-        int c = 0;
            for(i=a.length-1;i>=0;i--){
             if(olde==a[i]){
                 a[i]=newe;
