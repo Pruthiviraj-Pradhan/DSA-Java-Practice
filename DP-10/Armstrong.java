@@ -16,7 +16,7 @@ public class Armstrong {
         int dup = n;
         
         while(n>0){
-        int ld = n%10;
+        int ld = n%10; 
         sum = sum + (ld*ld*ld);
         n = n/10;
     }
