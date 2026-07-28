@@ -13,7 +13,7 @@ public class InsertFirst
 			size++;
 		}
 	}
-    
+
 	void addFirst(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -40,11 +40,11 @@ class Test01
 {
 	public static void main(String[] args)
 	{
-		InsertFirst list1 = new InsertFirst();
-		list1.addFirst(111);
-		list1.addFirst(222);
-		list1.addFirst(333);
-		list1.addFirst(444);
-		list1.printList();
+		InsertFirst list = new InsertFirst();
+		list.addFirst(111);
+		list.addFirst(222);
+		list.addFirst(333);
+		list.addFirst(444);
+		list.printList();
 	}
 }

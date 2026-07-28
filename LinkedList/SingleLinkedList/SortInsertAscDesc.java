@@ -28,7 +28,7 @@ public class SortInsertAscDesc {
 		currNode.next = newNode;
 	}
 
-    
+
 	void sortedInsertDesc(int data){
 		Node newNode = new Node(data);
 		Node currNode = head;
@@ -62,20 +62,20 @@ class Test04
 {
 	public static void main(String[] args)
 	{
-		SortInsertAscDesc ascList = new SortInsertAscDesc();
-		ascList.sortedInsertAsc(300);
-		ascList.sortedInsertAsc(100);
-		ascList.sortedInsertAsc(500);
-		ascList.sortedInsertAsc(200);
+		SortInsertAscDesc List1 = new SortInsertAscDesc();
+		List1.sortedInsertAsc(300);
+		List1.sortedInsertAsc(100);
+		List1.sortedInsertAsc(500);
+		List1.sortedInsertAsc(200);
 		System.out.println("Ascending:");
-		ascList.printList();
+		List1.printList();
 
-		SortInsertAscDesc descList = new SortInsertAscDesc();
-		descList.sortedInsertDesc(300);
-		descList.sortedInsertDesc(100);
-		descList.sortedInsertDesc(500);
-		descList.sortedInsertDesc(200);
+		SortInsertAscDesc List2 = new SortInsertAscDesc();
+		List2.sortedInsertDesc(300);
+		List2.sortedInsertDesc(100);
+		List2.sortedInsertDesc(500);
+		List2.sortedInsertDesc(200);
 		System.out.println("Descending:");
-		descList.printList();
+		List2.printList();
 	}
 }

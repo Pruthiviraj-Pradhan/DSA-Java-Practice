@@ -62,13 +62,13 @@ class Test11
 {
 	public static void main(String[] args)
 	{
-		DeleteAtPosition list1 = new DeleteAtPosition();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.printList();
-		list1.deleteElementAtPos(2);
-		list1.printList();
+		DeleteAtPosition list = new DeleteAtPosition();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.printList();
+		list.deleteElementAtPos(2);
+		list.printList();
 	}
 }

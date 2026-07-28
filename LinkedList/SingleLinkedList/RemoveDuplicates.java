@@ -51,17 +51,17 @@ class Test14
 	{
 		// Note: removeDuplicates() assumes a SORTED list
 		// (it only checks immediate neighbors)
-		RemoveDuplicates list1 = new RemoveDuplicates();
-		list1.addLast(111);
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(333);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.printList();
-		list1.removeDuplicates();
+		RemoveDuplicates list = new RemoveDuplicates();
+		list.addLast(111);
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(333);
+		list.addLast(333);
+		list.addLast(444);
+		list.printList();
+		list.removeDuplicates();
 		System.out.println("After removing duplicates:");
-		list1.printList();
+		list.printList();
 	}
 }

@@ -59,15 +59,15 @@ class Test13
 {
 	public static void main(String[] args)
 	{
-		DeleteElements list1 = new DeleteElements();
-		list1.addLast(222);
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(222);
-		list1.printList();
-		list1.deleteElements(222);
+		DeleteElements list = new DeleteElements();
+		list.addLast(222);
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(222);
+		list.printList();
+		list.deleteElements(222);
 		System.out.println("After deleting all occurrences of 222:");
-		list1.printList();
+		list.printList();
 	}
 }

@@ -65,20 +65,20 @@ class Test07
 {
 	public static void main(String[] args)
 	{
-		ReverseList list1 = new ReverseList();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
+		ReverseList list = new ReverseList();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
 		System.out.println("Original:");
-		list1.printList();
+		list.printList();
 
-		list1.reverse();
+		list.reverse();
 		System.out.println("After iterative reverse():");
-		list1.printList();
+		list.printList();
 
-		list1.reverseR();
+		list.reverseR();
 		System.out.println("After recursive reverseR():");
-		list1.printList();
+		list.printList();
 	}
 }

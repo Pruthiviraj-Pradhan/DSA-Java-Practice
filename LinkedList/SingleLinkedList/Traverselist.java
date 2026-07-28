@@ -40,11 +40,11 @@ class Test05
 {
 	public static void main(String[] args)
 	{
-		Traverselist list1 = new Traverselist();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.printList();
+		Traverselist list = new Traverselist();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.printList();
 	}
 }

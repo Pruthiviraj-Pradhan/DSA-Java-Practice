@@ -56,19 +56,19 @@ class Test15
 {
 	public static void main(String[] args)
 	{
-		CopyReverseList list1 = new CopyReverseList();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
+		CopyReverseList list = new CopyReverseList();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
 		System.out.println("Original:");
-		list1.printList();
+		list.printList();
 
-		CopyReverseList reversedCopy = list1.copyReversedList();
+		CopyReverseList reversedCopy = list.copyReversedList();
 		System.out.println("Reversed copy:");
 		reversedCopy.printList();
 
 		System.out.println("Original is unchanged:");
-		list1.printList();
+		list.printList();
 	}
 }

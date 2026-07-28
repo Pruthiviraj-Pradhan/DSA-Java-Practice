@@ -50,7 +50,7 @@ public class InserAtPosition {
 		}
 	}
 
-    
+
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");
@@ -68,13 +68,13 @@ class Test03
 {
 	public static void main(String[] args)
 	{
-		InserAtPosition list1 = new InserAtPosition();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.printList();
-		list1.addPos(999,2);
-		list1.printList();
+		InserAtPosition list = new InserAtPosition();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.printList();
+		list.addPos(999,2);
+		list.printList();
 	}
 }

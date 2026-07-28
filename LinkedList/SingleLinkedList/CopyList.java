@@ -62,15 +62,15 @@ class Test16
 {
 	public static void main(String[] args)
 	{
-		CopyList list1 = new CopyList();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
+		CopyList list = new CopyList();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
 		System.out.println("Original:");
-		list1.printList();
+		list.printList();
 
-		CopyList copy = list1.copyList();
+		CopyList copy = list.copyList();
 		System.out.println("Copy (same order):");
 		copy.printList();
 	}

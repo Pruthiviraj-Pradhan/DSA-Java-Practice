@@ -12,6 +12,8 @@ public class DeleteFirst {
 			size++;
 		}
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -23,6 +25,8 @@ public class DeleteFirst {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+
 	void deleteFirst(){
 		if(head==null){
 			System.out.println("List is empty");
@@ -31,6 +35,8 @@ public class DeleteFirst {
 		size--;
 		head=head.next;
 	}
+
+
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");
@@ -48,13 +54,13 @@ class Test09
 {
 	public static void main(String[] args)
 	{
-		DeleteFirst list1 = new DeleteFirst();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.printList();
-		list1.deleteFirst();
-		list1.printList();
+		DeleteFirst list = new DeleteFirst();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.printList();
+		list.deleteFirst();
+		list.printList();
 	}
 }

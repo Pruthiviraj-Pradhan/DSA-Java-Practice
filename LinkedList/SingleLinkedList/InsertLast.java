@@ -40,11 +40,11 @@ class Test02
 {
 	public static void main(String[] args)
 	{
-		InsertLast list1 = new InsertLast();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.printList();
+		InsertLast list = new InsertLast();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.printList();
 	}
 }

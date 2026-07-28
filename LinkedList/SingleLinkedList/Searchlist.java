@@ -49,13 +49,13 @@ class Test08
 {
 	public static void main(String[] args)
 	{
-		Searchlist list1 = new Searchlist();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.printList();
-		System.out.println("Search 333: "+list1.search(333));
-		System.out.println("Search 999: "+list1.search(999));
+		Searchlist list = new Searchlist();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.printList();
+		System.out.println("Search 333: "+list.search(333));
+		System.out.println("Search 999: "+list.search(999));
 	}
 }

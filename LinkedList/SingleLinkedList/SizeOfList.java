@@ -17,7 +17,7 @@ public class SizeOfList {
 		return this.size;
 	}
 
-    
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -46,12 +46,12 @@ class Test06
 {
 	public static void main(String[] args)
 	{
-		SizeOfList list1 = new SizeOfList();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.printList();
-		System.out.println("Size: "+list1.getSize());
+		SizeOfList list = new SizeOfList();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.printList();
+		System.out.println("Size: "+list.getSize());
 	}
 }
