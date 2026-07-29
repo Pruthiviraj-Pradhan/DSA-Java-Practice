@@ -29,6 +29,8 @@ public class SizeOfList {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+	
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

@@ -13,6 +13,7 @@ public class SortInsertAscDesc {
 		}
 	}
 	
+	
 	void sortedInsertAsc(int data){
 		Node newNode = new Node(data);
 		Node currNode = head;

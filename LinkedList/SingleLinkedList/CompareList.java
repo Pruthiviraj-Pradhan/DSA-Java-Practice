@@ -12,6 +12,8 @@ public class CompareList {
 			size++;
 		}
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -23,6 +25,8 @@ public class CompareList {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+//Iterative Method
 	boolean compareList1(CompareList list){
 		Node head1=head,head2=list.head;
 		while(head1!=null && head2!=null){
@@ -35,6 +39,8 @@ public class CompareList {
 			return true;
 		return false;
 	}
+
+//Recursive method
 	boolean compareList2(CompareList list){
 		return compareList(head,list.head);
 	}
@@ -46,6 +52,8 @@ public class CompareList {
 		else
 			return compareList(head1.next,head2.next);
 	}
+
+
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

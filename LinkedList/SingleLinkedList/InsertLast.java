@@ -12,6 +12,8 @@ public class InsertLast {
 			size++;
 		}
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -23,6 +25,8 @@ public class InsertLast {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+	
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

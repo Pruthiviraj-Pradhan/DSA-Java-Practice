@@ -17,6 +17,8 @@ public class CopyList {
 			size++;
 		}
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -28,6 +30,8 @@ public class CopyList {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+
 	CopyList copyList(){
 		Node headNode=null,tailNode=null,tempNode=null,currNode=head;
 		if(currNode==null)
@@ -45,6 +49,8 @@ public class CopyList {
 		obj.head = headNode;
 		return obj;
 	}
+
+	
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

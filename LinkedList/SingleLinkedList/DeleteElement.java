@@ -12,6 +12,8 @@ public class DeleteElement {
 			size++;
 		}
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -23,6 +25,8 @@ public class DeleteElement {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+
 	void deleteElement(int data){
 		Node temp = head;
 		if(temp==null){
@@ -43,6 +47,8 @@ public class DeleteElement {
 			temp = temp.next;
 		}
 	}
+
+    
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

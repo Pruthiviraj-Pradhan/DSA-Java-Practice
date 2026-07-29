@@ -14,6 +14,7 @@ public class InsertFirst
 		}
 	}
 
+
 	void addFirst(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -23,6 +24,8 @@ public class InsertFirst
 		newNode.next = head;
 		head = newNode;
 	}
+
+	
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

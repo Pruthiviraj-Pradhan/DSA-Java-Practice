@@ -12,9 +12,12 @@ public class NthNode {
 			size++;
 		}
 	}
+
 	int getSize(){
 		return this.size;
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -26,12 +29,14 @@ public class NthNode {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+
 	int nthNodeFromBegin(int index){
-		if(index>getSize() || index<1)
+		if(index>getSize() || index < 1)
 			return -1;
 		int count=0;
 		Node currNode = head;
-		while(currNode!=null && count<index-1){
+		while(currNode!=null && count < index-1){
 			count++;
 			currNode=currNode.next;
 		}
@@ -40,11 +45,13 @@ public class NthNode {
 	int nthNodeFromEnd(int index){
 		int size = getSize();
 		int sindex;
-		if(size!=0 && size<index)
+		if(size!=0 && size < index)
 			return -1;
-		sindex = size-index+1;
+		sindex = size - index+1;   //sindex = starting index
 		return nthNodeFromBegin(sindex);
 	}
+
+
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

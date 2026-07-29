@@ -12,6 +12,8 @@ public class DeleteAtPosition {
 			size++;
 		}
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -23,6 +25,8 @@ public class DeleteAtPosition {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+
 	void deleteElementAtPos(int pos){
 		Node temp = head;
 		int i=0;
@@ -45,6 +49,8 @@ public class DeleteAtPosition {
 			temp = temp.next;
 		}
 	}
+
+    
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

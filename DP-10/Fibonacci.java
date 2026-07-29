@@ -1,4 +1,4 @@
-/*import java.util.*;
+import java.util.*;
 
 class Fibonacci {
     public ArrayList<Integer> fib(int n) {
@@ -12,7 +12,7 @@ class Fibonacci {
 
         al.add(b);
         for (int i = 2; i < n; i++) {
-            int c = a + b;
+            int c = a + b;  //Next Number = Previous Number + Current Number
             al.add(c);
             a = b;
             b = c;
@@ -29,9 +29,11 @@ class Fibonacci {
         ArrayList<Integer> result = obj.fib(n);
 
         System.out.println(result);
+        sc.close();
     }
-}*/
-import java.util.Scanner;
+}
+
+/* import java.util.Scanner;
 
 public class Fibonacci {
 
@@ -57,4 +59,5 @@ public class Fibonacci {
         sequence(n);
         sc.close();
     }
-}
+} 
+*/

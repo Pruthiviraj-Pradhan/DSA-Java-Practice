@@ -12,6 +12,8 @@ public class ReverseList {
 			size++;
 		}
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -23,6 +25,8 @@ public class ReverseList {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+
 	void reverse(){
 		Node curr = head, prev=null,next=null;
 		while(curr!=null){
@@ -33,6 +37,8 @@ public class ReverseList {
 		}
 		head = prev;
 	}
+
+    
 	void reverseR(){
 		head = reverseRUtil(head,null);
 	}
@@ -48,6 +54,8 @@ public class ReverseList {
 		currNode.next = nextNode;
 		return res;
 	}
+
+
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

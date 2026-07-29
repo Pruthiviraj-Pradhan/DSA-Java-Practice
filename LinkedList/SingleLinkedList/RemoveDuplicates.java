@@ -23,6 +23,8 @@ public class RemoveDuplicates {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+
 	void removeDuplicates(){
 		Node currNode = head;
 		while(currNode!=null){
@@ -32,6 +34,8 @@ public class RemoveDuplicates {
 				currNode = currNode.next;
 		}
 	}
+
+	
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

@@ -12,6 +12,7 @@ public class Functions {
             end--;
         }
     }
+    
     public static void main(String s[]){
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter n:");

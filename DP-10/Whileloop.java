@@ -22,6 +22,8 @@ public class Whileloop {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter digit: ") ; 
         int n = sc.nextInt();
+
+        
         Whileloop obj = new Whileloop();
         int result = obj.whileLoop(n);
         System.out.print("Result: " + result);

@@ -17,6 +17,8 @@ public class CopyReverseList {
 			size++;
 		}
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -28,6 +30,8 @@ public class CopyReverseList {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+
 	CopyReverseList copyReversedList(){
 		Node temp1=null,temp2=null,currNode=head;
 		while(currNode!=null){
@@ -39,6 +43,8 @@ public class CopyReverseList {
 		obj.head = temp1;
 		return obj;
 	}
+
+	
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");

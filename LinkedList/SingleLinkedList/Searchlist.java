@@ -12,6 +12,8 @@ public class Searchlist {
 			size++;
 		}
 	}
+
+
 	void addLast(int data){
 		Node newNode = new Node(data);
 		if(head==null){
@@ -23,6 +25,8 @@ public class Searchlist {
 			currNode = currNode.next;
 		currNode.next = newNode;
 	}
+
+
 	boolean search(int data){
 		Node currNode = head;
 		while(currNode!=null){
@@ -32,6 +36,8 @@ public class Searchlist {
 		}
 		return false;
 	}
+
+	
 	void printList(){
 		if(head==null){
 			System.out.println("list is empty");
