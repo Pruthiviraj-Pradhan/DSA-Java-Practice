@@ -1,8 +1,10 @@
 package Searching;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.*;
 public class LinearSearchM2 {
-    /*static int linearSearch(int a[], int key){
+
+    // Method 1
+    static int linearSearch(int a[], int key){
         int i, index =1;
         for(i =0; i<a.length; i++){
             if(key == a[i]){
@@ -11,7 +13,8 @@ public class LinearSearchM2 {
             }
         }
         return index;
-    }*/
+    }
+   /* Method 2
    static ArrayList linearSearch(int a[], int key){
         int i, c =0;
         ArrayList list = new ArrayList();
@@ -24,7 +27,7 @@ public class LinearSearchM2 {
             }
         }
         return list;
-    }
+    }*/
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int [] a = {10,11,12,11,13,17,19,20};

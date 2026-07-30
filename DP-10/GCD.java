@@ -7,7 +7,7 @@ Greatest Common divisor = 2.
 */
 import java.util.*;
 public class GCD {
-     public int GCD(int n1, int n2) {
+     public int Gcd(int n1, int n2) {
 
         /*
         int Gcd = 1;
@@ -37,7 +37,7 @@ public class GCD {
         int n2  = sc.nextInt();
 
         GCD obj = new GCD();
-        int result = obj.GCD(n1, n2);
+        int result = obj.Gcd(n1, n2);
         System.out.print("Output : "+result);
         sc.close();
     }

@@ -23,20 +23,24 @@ public class SortElements {
         for(i=0;i<n;i++){
             System.out.print(a[i]+" ");
         }
-        /* Version 1
+        // Version 1
         for(i=0;i<n;i++){
             for(j=i+1;j<n;j++){
+
                 if(a[i]>a[j]){
+
                     t = a[i];
                     a[i]=a[j];
                     a[j]=t;
                 }
             }
-    }*/
+    }
         /*Version 2
         for(i=0;i<n;i++){
             for(j=i+1;j<n;j++){
+
                 if(a[i]<a[j]){
+                
                     t = a[i];
                     a[i]=a[j];
                     a[j]=t;
@@ -55,7 +59,7 @@ public class SortElements {
         
         //version 5==>by using customized sorting
         //Arrays.sort(a,0,n/2);//starting location
-        Arrays.sort(a,n/2,n); //ending location
+        //Arrays.sort(a,n/2,n); //ending location
 
 
    System.out.println();
