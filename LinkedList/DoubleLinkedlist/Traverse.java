@@ -47,11 +47,11 @@ class TestD05
 {
 	public static void main(String[] args)
 	{
-		Traverse list1 = new Traverse();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.traverse();
+		Traverse list = new Traverse();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.traverse();
 	}
 }

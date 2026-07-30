@@ -13,6 +13,8 @@ public class SearchList {
 			size++;
 		}
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -25,6 +27,8 @@ public class SearchList {
 			newNode.prev = currNode;
 		}
 	}
+
+
 	boolean search(int data) {
 		Node temp = head;
 		while(temp!=null) {
@@ -34,6 +38,8 @@ public class SearchList {
 		}
 		return false;
 	}
+
+
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -52,13 +58,13 @@ class TestD08
 {
 	public static void main(String[] args)
 	{
-		SearchList list1 = new SearchList();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.traverse();
-		System.out.println("Search 333: "+list1.search(333));
-		System.out.println("Search 999: "+list1.search(999));
+		SearchList list = new SearchList();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.traverse();
+		System.out.println("Search 333: "+list.search(333));
+		System.out.println("Search 999: "+list.search(999));
 	}
 }

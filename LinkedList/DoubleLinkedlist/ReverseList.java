@@ -13,6 +13,8 @@ Node head;
 			size++;
 		}
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -25,6 +27,8 @@ Node head;
 			newNode.prev = currNode;
 		}
 	}
+
+
 	void reverse() {
 		Node temp=null,currNode=head;
 		while(currNode!=null) {
@@ -36,6 +40,8 @@ Node head;
 		if(temp!=null)
 			head = temp.prev;
 	}
+
+	
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -54,15 +60,15 @@ class TestD07
 {
 	public static void main(String[] args)
 	{
-		ReverseList list1 = new ReverseList();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
+		ReverseList list = new ReverseList();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
 		System.out.println("Original:");
-		list1.traverse();
-		list1.reverse();
+		list.traverse();
+		list.reverse();
 		System.out.println("Reversed:");
-		list1.traverse();
+		list.traverse();
 	}
 }

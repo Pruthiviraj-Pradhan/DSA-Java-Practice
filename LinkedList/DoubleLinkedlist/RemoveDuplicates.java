@@ -13,6 +13,8 @@ Node head;
 			size++;
 		}
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -25,6 +27,8 @@ Node head;
 			newNode.prev = currNode;
 		}
 	}
+
+
 	void removeDuplicates() {
 		Node currNode = head, temp;
 		while(currNode!=null) {
@@ -39,6 +43,8 @@ Node head;
 				currNode = currNode.next;
 		}
 	}
+
+
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -59,17 +65,17 @@ class TestD14
 	{
 		// Note: removeDuplicates() assumes a SORTED list
 		// (it only checks immediate neighbors)
-		RemoveDuplicates list1 = new RemoveDuplicates();
-		list1.addLast(111);
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(333);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.traverse();
-		list1.removeDuplicates();
+		RemoveDuplicates list = new RemoveDuplicates();
+		list.addLast(111);
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(333);
+		list.addLast(333);
+		list.addLast(444);
+		list.traverse();
+		list.removeDuplicates();
 		System.out.println("After removing duplicates:");
-		list1.traverse();
+		list.traverse();
 	}
 }

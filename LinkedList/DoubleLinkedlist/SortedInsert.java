@@ -13,6 +13,8 @@ public class SortedInsert {
 			size++;
 		}
 	}
+
+
 	void sortedInsertAsc(int data) {
 		Node newNode = new Node(data,null,null);
 		Node currNode = head;
@@ -41,6 +43,8 @@ public class SortedInsert {
 			newNode.prev = currNode;
 		}
 	}
+
+
 	void sortedInsertDesc(int data) {
 		Node newNode = new Node(data,null,null);
 		Node currNode = head;
@@ -69,6 +73,8 @@ public class SortedInsert {
 			newNode.prev = currNode;
 		}
 	}
+
+
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -87,20 +93,20 @@ class TestD04
 {
 	public static void main(String[] args)
 	{
-		SortedInsert ascList = new SortedInsert();
-		ascList.sortedInsertAsc(300);
-		ascList.sortedInsertAsc(100);
-		ascList.sortedInsertAsc(500);
-		ascList.sortedInsertAsc(200);
+		SortedInsert List1 = new SortedInsert();
+		List1.sortedInsertAsc(300);
+		List1.sortedInsertAsc(100);
+		List1.sortedInsertAsc(500);
+		List1.sortedInsertAsc(200);
 		System.out.println("Ascending:");
-		ascList.traverse();
+		List1.traverse();
 
-		SortedInsert descList = new SortedInsert();
-		descList.sortedInsertDesc(300);
-		descList.sortedInsertDesc(100);
-		descList.sortedInsertDesc(500);
-		descList.sortedInsertDesc(200);
+		SortedInsert List2 = new SortedInsert();
+		List2.sortedInsertDesc(300);
+		List2.sortedInsertDesc(100);
+		List2.sortedInsertDesc(500);
+		List2.sortedInsertDesc(200);
 		System.out.println("Descending:");
-		descList.traverse();
+		List2.traverse();
 	}
 }

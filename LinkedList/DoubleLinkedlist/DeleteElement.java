@@ -13,6 +13,8 @@ Node head;
 			size++;
 		}
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -25,6 +27,8 @@ Node head;
 			newNode.prev = currNode;
 		}
 	}
+
+
 	void deleteElement(int data) {
 		Node temp1 = head, temp2;
 		if(temp1==null) {
@@ -50,8 +54,9 @@ Node head;
 			}
 			temp1 = temp1.next;
 		}
-
 	}
+
+
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -70,15 +75,15 @@ class TestD12
 {
 	public static void main(String[] args)
 	{
-		DeleteElement list1 = new DeleteElement();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(222);
-		list1.addLast(444);
-		list1.traverse();
-		list1.deleteElement(222);
+		DeleteElement list = new DeleteElement();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(222);
+		list.addLast(444);
+		list.traverse();
+		list.deleteElement(222);
 		System.out.println("After deleting first occurrence of 222:");
-		list1.traverse();
+		list.traverse();
 	}
 }

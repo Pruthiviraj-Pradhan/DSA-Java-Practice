@@ -13,6 +13,8 @@ Node head;
 			size++;
 		}
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -25,6 +27,8 @@ Node head;
 			newNode.prev = currNode;
 		}
 	}
+
+
 	void deleteElements(int data) {
 		Node temp1 = head, temp2;
 		if(temp1==null) {
@@ -50,6 +54,8 @@ Node head;
 				temp1 = temp1.next;
 		}  
 	}
+
+	
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");

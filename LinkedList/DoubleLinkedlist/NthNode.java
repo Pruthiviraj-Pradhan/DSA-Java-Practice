@@ -13,9 +13,12 @@ Node head;
 			size++;
 		}
 	}
+
 	int getSize() {
 		return this.size;
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -28,6 +31,8 @@ Node head;
 			newNode.prev = currNode;
 		}
 	}
+
+
 	int nthNodeFromBegin(int index) {
 		if(index>getSize() || index<1)
 			return -1;
@@ -39,6 +44,7 @@ Node head;
 		}
 		return currNode.data;
 	}
+
 	int nthNodeFromEnd(int index) {
 		int size = getSize();
 		int sindex;
@@ -47,6 +53,8 @@ Node head;
 		sindex = size-index+1;
 		return nthNodeFromBegin(sindex);
 	}
+
+
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -65,17 +73,17 @@ class TestD18
 {
 	public static void main(String[] args)
 	{
-		NthNode list1 = new NthNode();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.addLast(555);
-		list1.addLast(666);
-		list1.addLast(777);
-		list1.addLast(888);
-		list1.traverse();
-		System.out.println(list1.nthNodeFromBegin(3));
-		System.out.println(list1.nthNodeFromEnd(3));
+		NthNode list = new NthNode();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.addLast(555);
+		list.addLast(666);
+		list.addLast(777);
+		list.addLast(888);
+		list.traverse();
+		System.out.println(list.nthNodeFromBegin(3));
+		System.out.println(list.nthNodeFromEnd(3));
 	}
 }

@@ -25,6 +25,8 @@ Node head;
 			newNode.prev = currNode;
 		}
 	}
+
+
 	void deleteFirst() {
 		if(head==null) {
 			System.out.println("DLL is empty");
@@ -35,6 +37,8 @@ Node head;
 		if(head!=null)
 			head.prev = null;
 	}
+
+
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -53,13 +57,13 @@ class TestD09
 {
 	public static void main(String[] args)
 	{
-		DeleteFirst list1 = new DeleteFirst();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.traverse();
-		list1.deleteFirst();
-		list1.traverse();
+		DeleteFirst list = new DeleteFirst();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.traverse();
+		list.deleteFirst();
+		list.traverse();
 	}
 }

@@ -13,6 +13,8 @@ Node head;
 			size++;
 		}
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -25,6 +27,8 @@ Node head;
 			newNode.prev = currNode;
 		}
 	}
+
+
 	boolean compareListI(CompareLists list) {
 		Node head1=head,head2=list.head;
 		while(head1!=null && head2!=null) {
@@ -37,6 +41,8 @@ Node head;
 			return true;
 		return false;
 	}
+
+
 	boolean compareListR(CompareLists list) {
 		return compareList(head,list.head);
 	}
@@ -48,6 +54,8 @@ Node head;
 		else
 			return compareList(head1.next,head2.next);
 	}
+
+	
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");

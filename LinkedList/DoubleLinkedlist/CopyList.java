@@ -13,6 +13,8 @@ public class CopyList {
 			size++;
 		}
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -25,6 +27,8 @@ public class CopyList {
 			newNode.prev = currNode;
 		}
 	}
+
+
 	CopyList copyList() {
 		Node headNode=null,tailNode=null,tempNode=null,currNode=head;
 		if(currNode==null)
@@ -43,6 +47,8 @@ public class CopyList {
 		obj.head = headNode;
 		return obj;
 	}
+
+
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -61,15 +67,15 @@ class TestD16
 {
 	public static void main(String[] args)
 	{
-		CopyList list1 = new CopyList();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
+		CopyList list = new CopyList();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
 		System.out.println("Original:");
-		list1.traverse();
+		list.traverse();
 
-		CopyList copy = list1.copyList();
+		CopyList copy = list.copyList();
 		System.out.println("Copy (same order):");
 		copy.traverse();
 	}

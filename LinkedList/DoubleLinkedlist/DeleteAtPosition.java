@@ -13,6 +13,8 @@ Node head;
 			size++;
 		}
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -25,6 +27,8 @@ Node head;
 			newNode.prev = currNode;
 		}
 	}
+
+
 	void deleteElementAtPos(int pos) {
 		Node temp1 = head, temp2;
 		int i=0;
@@ -57,6 +61,8 @@ Node head;
 			temp2 = temp1.next;
 		}
 	}
+
+
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -75,13 +81,13 @@ class TestD11
 {
 	public static void main(String[] args)
 	{
-		DeleteAtPosition list1 = new DeleteAtPosition();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.traverse();
-		list1.deleteElementAtPos(2);
-		list1.traverse();
+		DeleteAtPosition list = new DeleteAtPosition();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.traverse();
+		list.deleteElementAtPos(2);
+		list.traverse();
 	}
 }

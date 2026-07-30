@@ -16,6 +16,8 @@ public class SizeOfList {
 	int getSize() {
 		return this.size;
 	}
+
+
 	void addLast(int data) {
 		Node newNode = new Node(data,null,null);
 		if(head==null)
@@ -28,6 +30,8 @@ public class SizeOfList {
 			newNode.prev = currNode;
 		}
 	}
+
+
 	void traverse() {
 		if(head==null) {
 			System.out.println("List is Empty");
@@ -46,12 +50,12 @@ class TestD06
 {
 	public static void main(String[] args)
 	{
-		SizeOfList list1 = new SizeOfList();
-		list1.addLast(111);
-		list1.addLast(222);
-		list1.addLast(333);
-		list1.addLast(444);
-		list1.traverse();
-		System.out.println("Size: "+list1.getSize());
+		SizeOfList list = new SizeOfList();
+		list.addLast(111);
+		list.addLast(222);
+		list.addLast(333);
+		list.addLast(444);
+		list.traverse();
+		System.out.println("Size: "+list.getSize());
 	}
 }
